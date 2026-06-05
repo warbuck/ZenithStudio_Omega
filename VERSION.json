@@ -1,0 +1,25 @@
+{
+  "name": "ZenithStudio Omega",
+  "version": "4.8.0",
+  "codename": "V5 Release Candidate Gate / Promotion Ledger Build",
+  "channel": "pre-v5-release-candidate",
+  "build": "v4.8",
+  "release_date": "2026-06-05",
+  "phase": 8,
+  "status": "v5_release_candidate_gate",
+  "version_5_promotable": false,
+  "artifact_status": {
+    "source_integration": 100,
+    "v5_readiness_source": 100,
+    "windows_artifact_proof_source_kit": 100,
+    "v5_release_candidate_source_candidate": 100,
+    "final_windows_artifact_proof": 0
+  },
+  "blockers": [
+    "Final Windows artifact proof",
+    "ZenithStudio.exe generation",
+    "runtime_manifest.json validation",
+    "installer candidate verification",
+    "exe_smoke_test_report.json generation"
+  ]
+}

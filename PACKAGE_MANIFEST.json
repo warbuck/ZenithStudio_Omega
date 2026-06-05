@@ -1,0 +1,54 @@
+{
+  "name": "ZenithStudio_Omega",
+  "version": "4.8.0",
+  "type": "windows_application",
+  "release_type": "pre-v5-release-candidate",
+  "manifest_version": "1.0",
+  "created": "2026-06-05",
+  "artifacts": {
+    "source": {
+      "path": "",
+      "status": "present",
+      "size_mb": 0,
+      "hash_sha256": ""
+    },
+    "exe": {
+      "path": "dist/ZenithStudio.exe",
+      "status": "pending",
+      "size_mb": 0,
+      "hash_sha256": ""
+    },
+    "runtime_manifest": {
+      "path": "runtime/runtime_manifest.json",
+      "status": "pending",
+      "size_mb": 0,
+      "hash_sha256": ""
+    },
+    "installer": {
+      "path": "builds/installer/ZenithStudio_Setup.exe",
+      "status": "pending",
+      "size_mb": 0,
+      "hash_sha256": ""
+    },
+    "smoke_test_report": {
+      "path": "logs/exe_smoke_test_report.json",
+      "status": "pending",
+      "size_mb": 0,
+      "hash_sha256": ""
+    }
+  },
+  "python_version": "3.10+",
+  "dependencies": [
+    "flask>=2.3.0",
+    "flask-cors>=4.0.0",
+    "pydantic>=2.0.0",
+    "requests>=2.31.0",
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0"
+  ],
+  "windows_build_requirements": [
+    "PyInstaller>=5.13.0",
+    "NSIS>=3.08",
+    "Visual C++ Build Tools 2022 (optional)"
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "metadata": {
+    "version": "4.8.0",
+    "codename": "V5 Release Candidate Gate",
+    "last_updated": "2026-06-05",
+    "phase": 8
+  },
+  "phase_1_core_app": {
+    "name": "Restore Core App",
+    "status": "IN_PROGRESS",
+    "percent": 25,
+    "tasks": [
+      {
+        "name": "Directory structure",
+        "status": "COMPLETE",
+        "proof": "main.py and subdirs created"
+      },
+      {
+        "name": "Python backend",
+        "status": "IN_PROGRESS",
+        "proof": "ZenithStudio.py in progress"
+      },
+      {
+        "name": "Static UI (index.html, app.js, style.css)",
+        "status": "PENDING",
+        "proof": ""
+      },
+      {
+        "name": "Setup Wizard",
+        "status": "PENDING",
+        "proof": ""
+      },
+      {
+        "name": "Launcher scripts",
+        "status": "PENDING",
+        "proof": ""
+      }
+    ]
+  },
+  "phase_2_ide_and_ai": {
+    "name": "Restore IDE and AI Workbench",
+    "status": "PENDING",
+    "percent": 0,
+    "tasks": []
+  },
+  "phase_3_forge_tools": {
+    "name": "Restore Forge Tools",
+    "status": "PENDING",
+    "percent": 0,
+    "tasks": []
+  },
+  "phase_4_deep_orchestration": {
+    "name": "Restore Deep Orchestration",
+    "status": "PENDING",
+    "percent": 0,
+    "tasks": []
+  },
+  "phase_5_proof_gates": {
+    "name": "Restore Proof Gates",
+    "status": "PENDING",
+    "percent": 0,
+    "tasks": []
+  },
+  "phase_6_windows_release": {
+    "name": "Restore Windows Release Chain",
+    "status": "PENDING",
+    "percent": 0,
+    "tasks": []
+  },
+  "phase_7_canonical_mission": {
+    "name": "Prove Canonical Mission",
+    "status": "PENDING",
+    "percent": 0,
+    "tasks": []
+  },
+  "phase_8_v5_ledger": {
+    "name": "Generate V5 Promotion Ledger",
+    "status": "PENDING",
+    "percent": 0,
+    "tasks": []
+  }
+}
