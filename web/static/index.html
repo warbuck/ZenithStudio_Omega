@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZenithStudio Omega v4.8.0</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">ZenithStudio</div>
+        <nav class="nav-menu">
+            <a href="#dashboard" class="nav-item active">Dashboard</a>
+            <a href="#ai-operator" class="nav-item">AI Operator</a>
+            <a href="#mission-runtime" class="nav-item">Mission Runtime</a>
+            <a href="#build-tools" class="nav-item">Build Tools</a>
+            <a href="#proof-gates" class="nav-item">Proof Gates</a>
+            <a href="#release" class="nav-item">Release</a>
+        </nav>
+    </div>
+    
+    <div class="main-content">
+        <header class="top-bar">
+            <div class="title">ZenithStudio Omega v4.8.0</div>
+            <div class="status-indicator" id="statusIndicator">●</div>
+        </header>
+        
+        <div class="content-area">
+            <div id="dashboard" class="screen">
+                <h1>Dashboard</h1>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-value" id="sourceIntegration">100</div>
+                        <div class="stat-label">Source Integration %</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="v5Readiness">100</div>
+                        <div class="stat-label">V5 Readiness %</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="artifactProof">0</div>
+                        <div class="stat-label">Artifact Proof %</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="promotable">No</div>
+                        <div class="stat-label">V5 Promotable</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="ai-operator" class="screen" style="display:none;">
+                <h1>AI Operator</h1>
+                <div class="input-box">
+                    <textarea id="objectiveInput" placeholder="Enter your objective here..." rows="4"></textarea>
+                    <button id="submitBtn">Submit Objective</button>
+                </div>
+                <div id="missionOutput"></div>
+            </div>
+            
+            <div id="mission-runtime" class="screen" style="display:none;">
+                <h1>Mission Runtime</h1>
+                <div id="missionStatus" class="mission-status"></div>
+            </div>
+            
+            <div id="build-tools" class="screen" style="display:none;">
+                <h1>Build Tools</h1>
+                <div class="tool-buttons">
+                    <button id="scoreforgeBtn" class="tool-btn">ScoreForge (Generate)</button>
+                    <button id="senkuBtn" class="tool-btn">Senku (Validate)</button>
+                    <button id="runeweaveBtn" class="tool-btn">RuneWeave (Report)</button>
+                </div>
+                <div id="toolOutput"></div>
+            </div>
+            
+            <div id="proof-gates" class="screen" style="display:none;">
+                <h1>Proof Gates</h1>
+                <div id="proofStatus" class="proof-gates"></div>
+            </div>
+            
+            <div id="release" class="screen" style="display:none;">
+                <h1>Release & V5 Promotion</h1>
+                <div id="releaseStatus"></div>
+                <button id="buildBtn" class="btn-primary">Build Windows Artifacts</button>
+                <button id="promoteBtn" class="btn-primary">Check V5 Promotion</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
